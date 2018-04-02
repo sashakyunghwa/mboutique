@@ -37,9 +37,6 @@ export default () => (
                 <li>tower of 60 macarons – $120</li>
             </ul>
         </div>
-        <div>
-             <img className="gifts-background-image"/>
-        </div>
         <Footer/>
     </div>
 );

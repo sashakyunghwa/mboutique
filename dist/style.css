@@ -169,15 +169,7 @@ section div:nth-child(3) {
     width: 1000px;
     height: 700px;
     box-sizing: border-box;
-    background-image: url("../assets/images/gifts-parties-background.png") 0% 40%;
-}
-
-.gifts-background-image{
-    background-image: url("../assets/images/gifts-parties-background.png") 0% 40%;
-}
-
-.macarons-background-image{
-   background-image: url('../assets/images/our-macarons-image.png');
+    background: url("images/gifts-parties-background.png") 0% 40%;
 }
 
 #section3 a{
@@ -255,6 +247,7 @@ footer div{
 footer div:last-child{
     position: absolute;
     left: 50%;
+    top: 50%;
     transform: translate(-50%,0);
 }
 

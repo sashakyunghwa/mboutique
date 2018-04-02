@@ -26,10 +26,8 @@ import almond from '../assets/images/almond.png';
 export default () => (
     <div>
         <Header/>,
-        <main>
-            <div>
+            <section>
                 <img src={welcome}/>
-            </div>
             <div>
                 <img src={macarons}/>
             </div>
@@ -54,7 +52,8 @@ export default () => (
                     fruit flavored coffee and guarantee that these little delights soon become friend that you can not break.
                 </p>
                 <p className="title">Find that flavor you like. Try a sample every day! </p>
-            </div>
+                </div>
+            </section>
             <div id="flavors">
                 <div>
                     <p className="day">Monday</p>
@@ -99,7 +98,6 @@ export default () => (
                     <p id="almond" className="rest flavor">almond <img src={almond}/></p>
                 </div>
             </div>
-        </main>
         <Footer/>
     </div>
 )
