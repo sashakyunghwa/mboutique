@@ -121,24 +121,36 @@ section div:nth-child(3) {
     position: absolute;
 }
 
+.highlight-flavor{
+    color: white;
+}
+
 #coconut{
     background-color: #824603;
-    color: white;
+}
+
+#green-tea{
+    background-color: #afafee;
 }
 
 #vanilla{
     background-color: #df5277;
-    color: white;
+}
+
+#pistachio{
+    background-color: black;
 }
 
 #lemon{
     background-color: #a2304e;
-    color: white;
+}
+
+#tiffany-blue{
+    background-color: #ff859a;
 }
 
 #almond{
     background-color: #c39005;
-    color: white;
 }
 
 /* our_macarons.html */
@@ -327,4 +339,41 @@ footer div img{
         position: absolute;
         bottom: 5px;
     }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* header img {
+        left: 216px;
+    }
+    nav {
+        right: 50px;
+    }
+    section div:nth-child(2) img {
+        width: 38%;
+    }
+    .desc {
+        margin-right: 25px;
+    } */
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
