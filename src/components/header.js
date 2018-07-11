@@ -8,7 +8,7 @@ export default () => (
         <img src={logo}/>
             <nav>
                 <Link to="/">WELCOME</Link>
-                <Link to="/macarons">Our Macarons</Link>
+                <Link to="/macarons">OUR MACARONS</Link>
                 <Link to="/gifts_parties">GIFTS &amp; PARTIES</Link>
                 <Link to="/contact">CONTACT</Link>
             </nav>

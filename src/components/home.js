@@ -59,43 +59,43 @@ export default () => (
                     <p className="day">Monday</p>
                     <p className="rest">15:00 - 16:00</p>
                     <p className="rest flavor">chocolate <img src={chocolate}/></p>
-                    <p id="coconut" className="rest flavor">coconut <img src={coconut}/></p>
+                    <p id="coconut" className="rest highlight-flavor flavor">coconut <img src={coconut}/></p>
                 </div>
                 <div>
                     <p className="day">Tuesday</p>
                     <p className="rest">14:00 - 15:00</p>
                     <p className="rest flavor">violet cassis <img src={violet}/></p>
-                    <p className="rest flavor">green tea <img src={greentea}/></p>
+                    <p id="green-tea" className="rest highlight-flavor flavor">green tea <img src={greentea}/></p>
                 </div>
                 <div>
                     <p className="day">Wednesday</p>
                     <p className="rest">09:00 - 10:00</p>
                     <p className="rest flavor">passion fruit <img src={passionfruit}/></p>
-                    <p id="vanilla" className="rest flavor">vanilla <img src={vanilla}/></p>
+                    <p id="vanilla" className="rest highlight-flavor flavor">vanilla <img src={vanilla}/></p>
                 </div>
                 <div>
                     <p className="day">Thursday</p>
                     <p className="rest">18:00 - 19:00</p>
                     <p className="rest flavor">coffee <img src={coffee}/></p>
-                    <p className="rest flavor">pistachio <img src={pistachio}/></p>
+                    <p id="pistachio" className="rest highlight-flavor flavor">pistachio <img src={pistachio}/></p>
                 </div>
                 <div>
                     <p className="day">Friday</p>
                     <p className="rest">11:00 - 12:00</p>
                     <p className="rest flavor">raspbery <img src={raspberry}/></p>
-                    <p id="lemon" className="rest flavor">lemon <img src={lemon}/></p>
+                    <p id="lemon" className="rest highlight-flavor flavor">lemon <img src={lemon}/></p>
                 </div>
                 <div>
                     <p className="day">Saturday</p>
                     <p className="rest">13:00 - 14:00</p>
                     <p className="rest flavor">rose <img src={rose}/></p>
-                    <p className="rest flavor">tiffany blue <img src={tiffanyblue}/></p>
+                    <p id="tiffany-blue" className="rest highlight-flavor flavor">tiffany blue <img src={tiffanyblue}/></p>
                 </div>
                 <div>
                     <p className="day">Sunday</p>
                     <p className="rest">10:00 - 11:00</p>
                     <p className="rest flavor">caramel <img src={caramel}/></p>
-                    <p id="almond" className="rest flavor">almond <img src={almond}/></p>
+                    <p id="almond" className="rest highlight-flavor flavor">almond <img src={almond}/></p>
                 </div>
             </div>
         <Footer/>
