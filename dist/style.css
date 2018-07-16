@@ -1,5 +1,5 @@
 body{
-    width: 1000px;
+    width: auto;
     margin: auto;
 }
 
@@ -13,15 +13,39 @@ header{
 header img{
     position: relative;
     top: 50%;
-    left: 50px;
+    left: 31px;
     transform: translate(0, -50%);
 }
 
+.hamburger-menu {
+    visibility: hidden;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+.dark-blue-text {
+    color: #0A38F5;
+}
+.dark-pink-text {
+    color: #AC003A;
+}
+.dark-amber-text {
+    color: #ff6f00;
+}
+.dark-teal-text {
+    color: #004d40;
+}
+
+
 nav{
-    height: 100%;
     display: inline-block;
     position: absolute;
     right: 80px;
+    text-align: right;
 }
 
 header a{
@@ -43,18 +67,24 @@ section{
     color: #6A6969;
 }
 
+.big-image {
+    width: 100%;
+}
+
 /*  index.html */
 section div:nth-child(2){
     position: relative;
     display: inline-block;
     width: 25%;
     height: 630px;
+    text-align: center;
 }
 
 section div:nth-child(2) img{
     position: absolute;
     top: 155px;
-    left: 55px;
+    width: 85%;
+    transform: translate(-50%);
 }
 
 section div:nth-child(3) {
@@ -62,8 +92,6 @@ section div:nth-child(3) {
     width: 74%;
     padding: 40px;
     box-sizing: border-box;
-    height: 630px;
-    float: right;
 }
 .title{
     font-size: 20px;
@@ -80,7 +108,6 @@ section div:nth-child(3) {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0;
     color: #6A6969;
-    height: 146px;
     width: 1000px;
     box-sizing: border-box;
     padding: 3px;
@@ -158,15 +185,17 @@ section div:nth-child(3) {
     font-family: Arial, Helvetica, sans-serif;
     color: #6A6969;
     padding: 35px;
-    width: 1000px;
-    height: 700px;
+    width: 100%;
     box-sizing: border-box;
 }
 
 #section2 div{
     width: 100%;
-    height: 265px;
-    background: url("images/our-macarons-background.png") 50% -100%;
+    /* height: 265px; */
+    background-image: url("images/our-macarons-background.png");
+    background-repeat: no-repeat;
+    background-size: 82%;
+    background-position: 70% 100%;
 }
 
 #section2 li{
@@ -239,7 +268,7 @@ section div:nth-child(3) {
 }
 /* footer */
 footer{
-    width: 1000px;
+    /* width: 1000px; */
     height: 80px;
     background-color: #df5277;
     position: relative;
@@ -261,6 +290,7 @@ footer div:last-child{
     left: 50%;
     top: 50%;
     transform: translate(-50%,0);
+    width: 100%;
 }
 
 footer div p{
@@ -280,16 +310,11 @@ footer div img{
 
 /* style for a phone view */
 @media screen and (max-width: 627px){
-    body{
-        width: 375px;
-    }
     header img{
         display: block;
         position: absolute;
         width: 40%;
-        top: 20px;
-        left: 50%;
-        transform: translate(-50%, -20%);
+        top: 50%;
     }
 
     header{
@@ -301,14 +326,15 @@ footer div img{
 
     header a{
         font-size: 50%;
-        top: 34px;
+        top: -4px;
         margin: 5%;
     }
 
     nav{
         width: 100%;
         right: 0;
-        top: 10px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     body > img{
@@ -331,7 +357,6 @@ footer div img{
 
     footer div{
         display: inline-block;
-        width: fit-content;
         height: 30%;
     }
 
@@ -342,38 +367,196 @@ footer div img{
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
+    footer div p {
+        font-size: 11px;
+    }
+    footer {
+        height: 99px;
+        font-size: 0.9rem;
+    }
+    footer div {
+        width: 50%;
+    }
+    footer div:last-child {
+        top: auto;
+    }
+}
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #welcome-image {
+        width: 100%;
+    }
+    #flavors {
+        width: 100%;
+        text-align: center;
+    }
+    #flavors div {
+        width: 40%;
+        text-align: center;
+    }
+    section div:nth-child(2) {
+        text-align: center;
+    }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    body {
+        width: auto;
+    }
+    #logo {
+        width: 25%;
+        position: absolute;
+        left: 79px;
+    }
+    nav {
+        width: 64%;
+    }
+    #welcome-image {
+        width: 100%;
+    }
+    #flavors {
+        width: 96%;
+        text-align: center;
+    }
+    #flavors div {
+        text-align: start;
+    }
+    #macarons {
+        width: 75%;
+    }
+    section div:nth-child(2) img {
+        top: 224px;
+        width: 80%;
+    }
+    header a {
+        margin: 2%;
+    }
+   #logo {
+        width: 27%;
+        position: absolute;
+        left: 52px;
+    }
+    #section4 {
+        text-align: center;
+    }
+    #section4 div:first-child {
+        width: 100%;
+    }
 } 
+
+@media only screen and (max-width: 623px) {
+    #section2 {
+        text-align: center;
+    }
+    #section2 div {
+        background-image: none;
+        width: fit-content;
+        text-align: left;
+        margin: 0 auto;
+    }
+    #section3 {
+        background-image: none;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    /* header img {
-        left: 216px;
+    .regular-menu {
+        visibility: hidden;
+    }
+    .hamburger-menu {
+        visibility: visible;
     }
     nav {
-        right: 50px;
+        right: 14px;
     }
-    section div:nth-child(2) img {
-        width: 38%;
+    header a {
+        margin: 10px;
     }
-    .desc {
-        margin-right: 25px;
+    #welcome-image {
+        width: 100%;
+    }
+    #flavors {
+        width: 100%;
+        text-align: center;
+    }
+    #flavors div {
+        width: 22%;
+        text-align: start;
+    }
+    #macarons {
+        width: 77%;
+    }
+    footer {
+        width: 100%;
+    }
+    #our-macarons {
+        width: 100%
+    }
+    #section2 {
+        width: 100%;
+    }
+    #section2 div {
+        width: 100%;
+        background: url(images/our-macarons-background.png);
+        background-repeat: no-repeat;
+        background-size: 82%;
+        background-position: 70% 192%;
+    }
+    #gifts-parties {
+        width: 100%;
+    }
+    #section3 {
+        width: 100%;
+        background: url("images/gifts-parties-background.png");
+        background-repeat: no-repeat;
+        background-size: 82%;
+        background-position: 100% 29%;
+    }   
+    #contact-image {
+        width: 100%;
+    }
+    #section4 {
+        text-align: center;
+    }
+    /* #section4 div:first-child {
+        width: 100%;
     } */
-
+    #section4 div {
+        vertical-align: bottom;
+    }
+    #section4 input {
+        box-sizing: border-box;
+    }
+    #section4 textarea {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    #section2 div {
+        background-position: 70% 118%;
+    }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    #flavors div {
+        width: 12%;
+    }
+    #section2 div {
+        background-position: 70% 97%;
+    }
+    #section3 {
+        background-position: 35% 0%;
+    }
+    #section4 div:first-child {
+        width: auto;
+    }
 }

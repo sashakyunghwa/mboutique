@@ -27,9 +27,9 @@ export default () => (
     <div>
         <Header/>,
             <section>
-                <img src={welcome}/>
+                <img id="welcome-image" className="big-image" src={welcome}/>
             <div>
-                <img src={macarons}/>
+                <img id="macarons" src={macarons}/>
             </div>
             <div>
                 <p className="title">Welcome to MBoutique!</p>

@@ -9,7 +9,7 @@ export default () => (
     <div>
         <Header/>
         <div>
-            <img src={contact}/>
+            <img id="contact-image" className="big-image" src={contact}/>
         </div>
         <div id="section4">
             <div>
@@ -24,18 +24,20 @@ export default () => (
                 <p className="desc">Send your questions, comments and flavor suggestions or place an order!</p>
             </div>
             <div>
-                <p className="title">Contact Form</p>
-                <form action="">
-                    <input placeholder="Name" type="text"/>
-                    <input placeholder="Email" type="email"/>
-                    <input placeholder="Phone" type="text"/>
-                    <input placeholder="Subject" type="text"/>
-                    <textarea placeholder="Message"></textarea>
-                    <input type="submit"/>
-                </form>
-            </div>
-            <div>
-                <img className="macarons-background-image" src={macarons}/>
+                <div>
+                    <p className="title">Contact Form</p>
+                    <form action="">
+                        <input placeholder="Name" type="text"/>
+                        <input placeholder="Email" type="email"/>
+                        <input placeholder="Phone" type="text"/>
+                        <input placeholder="Subject" type="text"/>
+                        <textarea placeholder="Message"></textarea>
+                        <input type="submit"/>
+                    </form>
+                </div>
+                <div>
+                    <img className="macarons-background-image" src={macarons}/>
+                </div>
             </div>
         </div>
         <Footer/>
