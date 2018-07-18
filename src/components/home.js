@@ -27,11 +27,11 @@ export default () => (
     <div>
         <Header/>,
             <section>
-                <img id="welcome-image" className="big-image" src={welcome}/>
-            <div>
+                <img id="welcome-image" className="header-image" src={welcome}/>
+            <div id="macaron-left-div">
                 <img id="macarons" src={macarons}/>
             </div>
-            <div>
+            <div id="paragraph-right-div">
                 <p className="title">Welcome to MBoutique!</p>
                 <p className="desc">
                     We're a home-based baking business that specializes in the making of French macarons, a gluten-free

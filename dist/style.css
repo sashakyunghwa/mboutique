@@ -3,49 +3,22 @@ body{
     margin: auto;
 }
 
+/* Header Section Start */
 header{
     width: 100%;
-    height: 72px;
+    height: 85px;
     background-color: #fffabe;
     position: relative;
 }
 
 header img{
     position: relative;
-    top: 50%;
-    left: 31px;
-    transform: translate(0, -50%);
+    left: 5%;
+    transform: translate(-10%, 76%);
 }
 
-.hamburger-menu {
-    visibility: hidden;
-}
-
-.fa-1x {
-    font-size: 1.5rem;
-}
-.navbar-toggler.toggler-example {
-    cursor: pointer;
-}
-.dark-blue-text {
-    color: #0A38F5;
-}
-.dark-pink-text {
-    color: #AC003A;
-}
-.dark-amber-text {
-    color: #ff6f00;
-}
-.dark-teal-text {
-    color: #004d40;
-}
-
-
-nav{
-    display: inline-block;
-    position: absolute;
-    right: 80px;
-    text-align: right;
+.regular-nav-bar {
+    float: right;
 }
 
 header a{
@@ -55,7 +28,7 @@ header a{
     color: #515151;
     position: relative;
     top: 30px;
-    margin: 25px;
+    padding: 25px;
 }
 
 header a:hover{
@@ -67,23 +40,23 @@ section{
     color: #6A6969;
 }
 
-.big-image {
+.header-image {
     width: 100%;
 }
+/* Header Section End */
 
-/*  index.html */
+/* Welcome Page Start */
 section div:nth-child(2){
     position: relative;
     display: inline-block;
     width: 25%;
-    height: 630px;
+    height: 500px;
     text-align: center;
 }
 
 section div:nth-child(2) img{
     position: absolute;
     top: 155px;
-    width: 85%;
     transform: translate(-50%);
 }
 
@@ -112,6 +85,9 @@ section div:nth-child(3) {
     box-sizing: border-box;
     padding: 3px;
     margin-bottom: 60px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #flavors div{
@@ -179,6 +155,8 @@ section div:nth-child(3) {
 #almond{
     background-color: #c39005;
 }
+/* Welcome Page End */
+
 
 /* our_macarons.html */
 #section2{
@@ -207,18 +185,20 @@ section div:nth-child(3) {
     font-family: Arial, Helvetica, sans-serif;
     color: #6A6969;
     padding: 35px;
-    width: 1000px;
-    height: 700px;
+    /* width: 1000px; */
+    /* height: 700px; */
     box-sizing: border-box;
     background: url("images/gifts-parties-background.png") 0% 40%;
+    background-repeat: no-repeat;
+    background-size: 82%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #section3 a{
     text-decoration: none;
     color: #df5277;
-}
-#section3 p:last-of-type {
-    width: 500px;
 }
 
 #section4{
@@ -227,6 +207,8 @@ section div:nth-child(3) {
     box-sizing: border-box;
     padding: 35px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 #section4 div{
@@ -236,7 +218,7 @@ section div:nth-child(3) {
 }
 
 #section4 div:first-child{
-    width: 315px;
+    /* width: 315px; */
 }
 
 #section4 div:first-child p:nth-child(5){
@@ -308,255 +290,172 @@ footer div img{
     font-size: 11px;
 }
 
-/* style for a phone view */
-@media screen and (max-width: 627px){
-    header img{
-        display: block;
-        position: absolute;
-        width: 40%;
-        top: 50%;
+/* Home Page Media Queries Start */
+@media only screen and (max-width: 320px) {
+    #flavors {
+        width: 150px;
     }
+}
 
-    header{
+@media only screen and (min-width: 320px) {
+    #flavors {
+        width: 290px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #flavors {
+        width: 432px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #flavors {
+        width: 574px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    #macaron-left-div {
+        display: none;
+    }    
+    #paragraph-right-div {
         width: 100%;
-        height: 72px;
-        background-color: #fffabe;
-        position: relative;
+        padding: 65px;
     }
+}
 
-    header a{
-        font-size: 50%;
-        top: -4px;
-        margin: 5%;
+@media only screen and (min-width: 701px) {
+    #macarons {
+        width: 55%;
     }
+}
 
-    nav{
-        width: 100%;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    body > img{
-        width: 100%;
-    }
-
-    #section4{
-        padding: 0 35px;
-    }
-
-    #section4 div:last-child{
+@media only screen and (max-width: 900px) {
+    .regular-nav-bar {
         display: none;
     }
+}
 
-    footer{
-        width: 100%;
-        text-align: center;
-        padding: 5px;
+@media only screen and (min-width: 800px) {
+    .title {
+        font-size: 25px;
     }
-
-    footer div{
-        display: inline-block;
-        height: 30%;
-    }
-
-    footer div:last-child {
-        position: absolute;
-        bottom: 5px;
+    .desc {
+        font-size: 15px;
     }
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 500px) {
-    footer div p {
-        font-size: 11px;
-    }
-    footer {
-        height: 99px;
-        font-size: 0.9rem;
-    }
-    footer div {
-        width: 50%;
-    }
-    footer div:last-child {
-        top: auto;
-    }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    #welcome-image {
-        width: 100%;
-    }
-    #flavors {
-        width: 100%;
-        text-align: center;
-    }
-    #flavors div {
-        width: 40%;
-        text-align: center;
-    }
-    section div:nth-child(2) {
-        text-align: center;
-    }
-} 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    body {
-        width: auto;
-    }
-    #logo {
-        width: 25%;
-        position: absolute;
-        left: 79px;
-    }
-    nav {
-        width: 64%;
-    }
-    #welcome-image {
-        width: 100%;
-    }
-    #flavors {
-        width: 96%;
-        text-align: center;
-    }
-    #flavors div {
-        text-align: start;
-    }
-    #macarons {
-        width: 75%;
-    }
-    section div:nth-child(2) img {
-        top: 224px;
-        width: 80%;
-    }
-    header a {
-        margin: 2%;
-    }
-   #logo {
-        width: 27%;
-        position: absolute;
-        left: 52px;
-    }
-    #section4 {
-        text-align: center;
-    }
-    #section4 div:first-child {
-        width: 100%;
-    }
-} 
-
-@media only screen and (max-width: 623px) {
-    #section2 {
-        text-align: center;
-    }
-    #section2 div {
-        background-image: none;
-        width: fit-content;
-        text-align: left;
-        margin: 0 auto;
-    }
-    #section3 {
-        background-image: none;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .regular-menu {
-        visibility: hidden;
-    }
-    .hamburger-menu {
-        visibility: visible;
-    }
-    nav {
-        right: 14px;
-    }
-    header a {
-        margin: 10px;
-    }
-    #welcome-image {
-        width: 100%;
-    }
-    #flavors {
-        width: 100%;
-        text-align: center;
-    }
-    #flavors div {
-        width: 22%;
-        text-align: start;
-    }
-    #macarons {
-        width: 77%;
-    }
-    footer {
-        width: 100%;
-    }
-    #our-macarons {
-        width: 100%
-    }
-    #section2 {
-        width: 100%;
-    }
-    #section2 div {
-        width: 100%;
-        background: url(images/our-macarons-background.png);
-        background-repeat: no-repeat;
-        background-size: 82%;
-        background-position: 70% 192%;
-    }
-    #gifts-parties {
-        width: 100%;
-    }
-    #section3 {
-        width: 100%;
-        background: url("images/gifts-parties-background.png");
-        background-repeat: no-repeat;
-        background-size: 82%;
-        background-position: 100% 29%;
-    }   
-    #contact-image {
-        width: 100%;
-    }
-    #section4 {
-        text-align: center;
-    }
-    /* #section4 div:first-child {
-        width: 100%;
-    } */
-    #section4 div {
-        vertical-align: bottom;
-    }
-    #section4 input {
-        box-sizing: border-box;
-    }
-    #section4 textarea {
-        width: 100%;
-        display: block;
-        box-sizing: border-box;
-    }
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    #section2 div {
-        background-position: 70% 118%;
-    }
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    #flavors div {
-        width: 12%;
+    #flavors {
+        width: 1000px;
     }
-    #section2 div {
-        background-position: 70% 97%;
+    .title {
+        font-size: 30px;
     }
-    #section3 {
-        background-position: 35% 0%;
-    }
-    #section4 div:first-child {
-        width: auto;
+    .desc {
+        font-size: 16px;
     }
 }
+/* Home Page Media Queries End */
+
+
+/* Macarons Page Media Queries Start */
+@media only screen and (max-width: 600px) {
+    #section2 div {
+        background-image: none;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    #section2 div {
+        background-size: 70%;
+        background-position: 84% -79%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #section2 div {
+        background-size: 82%;
+        background-position: 84% 143%;
+    }
+}
+/* Macarons Page Media Queries End */
+
+
+/* Gifts & Parties Page Media Queries Start */
+@media only screen and (min-width: 801px) {
+    #section3 {
+        background-size: 80%;
+        background-position: 84% 50%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #section3 {
+        background-image: none;
+        padding: 60px;
+        width: 100%;
+    } 
+}
+
+@media only screen and (min-width: 900px) {
+    #section3 p:last-of-type {
+        width: 500px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    #section3 {
+        width: 1000px;
+    }
+}
+/* Gifts & Parties Page Media Queries End */
+
+
+/* Contact Page Media Queries Start */
+@media only screen and (max-width: 1334px) {
+    #section4 {
+        padding: 60px;
+        width: 100%;
+    } 
+    .macarons-background-image {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1334px) {
+    .macarons-background-image {
+        position: relative;
+        bottom: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #store-hours-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 50%;
+        transform: translateX(-25%);
+    }
+    #section4-right-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1076px) {
+#section4 div:first-child {
+    /* width: 315px; */
+}
+}
+
+

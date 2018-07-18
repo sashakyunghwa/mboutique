@@ -9,10 +9,10 @@ export default () => (
     <div>
         <Header/>
         <div>
-            <img id="contact-image" className="big-image" src={contact}/>
+            <img id="contact-image" className="header-image" src={contact}/>
         </div>
         <div id="section4">
-            <div>
+            <div id="store-hours-div">
                 <p className="title">Visit us!</p>
                 <p className="desc">Monday - Friday | 10am - 9pm
                 <br/>Saturday | 10am – 8pm
@@ -23,7 +23,7 @@ export default () => (
                 <p className="desc">order@mboutique.com</p>
                 <p className="desc">Send your questions, comments and flavor suggestions or place an order!</p>
             </div>
-            <div>
+            <div id="section4-right-div">
                 <div>
                     <p className="title">Contact Form</p>
                     <form action="">

@@ -7,7 +7,7 @@ export default () => (
     <div>  
         <Header/>,  
         <div> 
-        <img id="gifts-parties" className="big-image" src={giftsparties}/>
+        <img id="gifts-parties" className="header-image" src={giftsparties}/>
         </div>
         <div id="section3">
             <p className="title">Let's eat macarons!</p>
