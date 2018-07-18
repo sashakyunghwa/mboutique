@@ -43,6 +43,31 @@ section{
 .header-image {
     width: 100%;
 }
+
+/* Hamburger-menu */
+.hamburger-menu {
+    visibility: hidden;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+    cursor: pointer;
+}
+.dark-blue-text {
+    color: #0A38F5;
+}
+.dark-pink-text {
+    color: #AC003A;
+}
+.dark-amber-text {
+    color: #ff6f00;
+}
+.dark-teal-text {
+    color: #004d40;
+}
+
 /* Header Section End */
 
 /* Welcome Page Start */
@@ -335,6 +360,9 @@ footer div img{
 @media only screen and (max-width: 900px) {
     .regular-nav-bar {
         display: none;
+    }
+    .hamburger-menu {
+        visibility: visible;
     }
 }
 
