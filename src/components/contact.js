@@ -28,10 +28,14 @@ export default () => (
                     <p className="title">Contact Form</p>
                     <form action="">
                         <input placeholder="Name" type="text"/>
+                        <p class="red-text text-darken-2">Please enter your name.</p>
                         <input placeholder="Email" type="email"/>
+                        <p class="red-text text-darken-2">Please enter email address.</p>
                         <input placeholder="Phone" type="text"/>
+                        <p class="red-text text-darken-2">Please enter a phone number.</p>
                         <input placeholder="Subject" type="text"/>
                         <textarea placeholder="Message"></textarea>
+                        <p class="red-text text-darken-2">Please enter a message.</p>
                         <input type="submit"/>
                     </form>
                 </div>

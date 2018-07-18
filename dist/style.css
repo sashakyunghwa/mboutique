@@ -17,6 +17,7 @@ header img{
     transform: translate(0, -50%);
 }
 
+
 .hamburger-menu {
     visibility: hidden;
 }
@@ -94,8 +95,9 @@ section div:nth-child(3) {
     box-sizing: border-box;
 }
 .title{
+    color: black;
     font-size: 20px;
-    margin: 50px 0 30px 0;
+    /* margin: 50px 0 30px 0; */
 }
 
 .desc{
@@ -307,8 +309,25 @@ footer div img{
 .rights{
     font-size: 11px;
 }
+@media screen and (max-width: 320px){
+    .home-paragraph-div {
+        margin-top: -50%;
+        text-align: center;
+        width: 100%;
+    }
+    .desc {
+        font-size: 13px;
+    }
+}
 
-/* style for a phone view */
+@media screen and (min-width: 320px){
+    .home-paragraph-div {
+        margin-top: -50%;
+        text-align: center;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 627px){
     header img{
         display: block;
@@ -381,6 +400,7 @@ footer div img{
     footer div:last-child {
         top: auto;
     }
+
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -399,7 +419,30 @@ footer div img{
     section div:nth-child(2) {
         text-align: center;
     }
+    #macarons-image-div {
+        display: none;
+    }
+    /* .home-paragraph-div {
+        margin-top: -50%;
+        text-align: center;
+        width: 100%;
+    } */
+    section div:nth-child(3) {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+
 } 
+
+@media only screen and (max-width: 427px) {
+    .macarons-page-title {
+        font-size: 17px;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -464,12 +507,6 @@ footer div img{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .regular-menu {
-        visibility: hidden;
-    }
-    .hamburger-menu {
-        visibility: visible;
-    }
     nav {
         right: 14px;
     }
@@ -536,7 +573,38 @@ footer div img{
         display: block;
         box-sizing: border-box;
     }
+    #logo {
+        width: 13vw;
+        position: absolute;
+        left: 43px;
+    }
 } 
+
+@media only screen and (max-width: 768px) {
+    .regular-menu {
+        display: none;
+    }
+    .hamburger-menu {
+        visibility: visible;
+    }
+    .fa-1x {
+        font-size: 1.5rem;
+    }
+    .navbar-toggler.toggler-example {
+        cursor: pointer;
+    }
+    .navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+    }
+    #section3 {
+    width: 100%;
+    background: none;
+    /* background-repeat: no-repeat;
+    background-size: 82%;
+    background-position: 100% 29%; */
+}
+
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -544,6 +612,12 @@ footer div img{
         background-position: 70% 118%;
     }
 } 
+
+@media only screen and (max-width: 1024px) {
+    .macarons-page-title {
+        font-size: 17px;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -558,5 +632,11 @@ footer div img{
     }
     #section4 div:first-child {
         width: auto;
+    }
+    #logo {
+        width: 12vw;
+        position: absolute;
+        left: 28px;
+    
     }
 }

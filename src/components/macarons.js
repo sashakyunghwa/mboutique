@@ -10,11 +10,11 @@ export default () => (
             <img id="our-macarons" className="big-image"  src={macarons}/>
         </div>
         <div id="section2">
-            <p className="title">Our macarons are freshly made by hand</p>
+            <p className="macarons-page-title">Our macarons are freshly made by hand</p>
             <p className="desc">The vivid hues of our unique macarons reflect the natural flavors and essences that infuse the ganache
                 filling of these delicious almond cookies – each has its own personality, and all of them are made to savour for
                 their delicacy and unique character.</p>
-            <p className="title">Classics</p>
+            <p className="macarons-page-title">Classics</p>
 
             <div>
                 <ul>

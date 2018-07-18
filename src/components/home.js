@@ -28,10 +28,10 @@ export default () => (
         <Header/>,
             <section>
                 <img id="welcome-image" className="big-image" src={welcome}/>
-            <div>
+            <div id="macarons-image-div">
                 <img id="macarons" src={macarons}/>
             </div>
-            <div>
+            <div className="home-paragraph-div">
                 <p className="title">Welcome to MBoutique!</p>
                 <p className="desc">
                     We're a home-based baking business that specializes in the making of French macarons, a gluten-free
