@@ -5,9 +5,9 @@ import macarons from '../assets/images/our-macarons-image.png';
 
 export default () => (
     <div>    
-        <Header/>,
+        <Header/>
         <div>
-            <img src={macarons}/>
+            <img id="our-macarons" className="header-image"  src={macarons}/>
         </div>
         <div id="section2">
             <p className="title">Our macarons are freshly made by hand</p>
@@ -17,7 +17,7 @@ export default () => (
             <p className="title">Classics</p>
 
             <div>
-                <ul>
+                <ul id="flavor-list">
                     <li>caribbean chocolate</li>
                     <li>coconut</li>
                     <li>colombian coffee</li>
