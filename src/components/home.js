@@ -25,7 +25,7 @@ import almond from '../assets/images/almond.png';
 
 export default () => (
     <div>
-        <Header/>,
+        <Header/>
             <section>
                 <img id="welcome-image" className="header-image" src={welcome}/>
             <div id="macaron-left-div">

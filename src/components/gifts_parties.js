@@ -5,7 +5,7 @@ import giftsparties from '../assets/images/gifts-parties-image.png';
 
 export default () => (
     <div>  
-        <Header/>,  
+        <Header/>
         <div> 
         <img id="gifts-parties" className="header-image" src={giftsparties}/>
         </div>
