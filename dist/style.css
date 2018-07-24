@@ -363,11 +363,50 @@ footer div img{
 }
 
 @media only screen and (max-width: 900px) {
+    #logo-one {
+        display: none;
+    }
     .regular-nav-bar {
         display: none;
     }
     .hamburger-menu {
+        display: flex;
+    }
+    .hamburger-menu img {
+        transform: none;
+        left: 0;
+        position: static;
+    }
+    .navbar-brand {
+        top: 15px;
+        padding: 0;
+    }
+    .navbar-light .navbar-toggler {
+        position: relative;
+        top: 10px;
+        border: 2px solid #ff859a;
+    }
+    .collapse {
+        position: relative;
+        top: 10px;
+    }
+    header a {
+        top: 0;
+    }
+    .navbar-nav {
+        text-align: right;
+        background-color: #ff859a;
+        width: fit-content;
+    }
+    .nav-item:hover {
+        cursor: pointer; 
+    }
+    .navbar-nav .nav-link{
+        padding: 8px 20px;
         display: block;
+    }
+    .nav-link:hover {
+        background-color: #fffabe;
     }
 }
 
