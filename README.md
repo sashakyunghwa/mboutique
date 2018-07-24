@@ -1,5 +1,5 @@
 # M-Boutique
-An online storefront for a French bakery that specialized in macarons!
+An online storefront for a French bakery that specializes in macarons!
 
 ### Features
 
