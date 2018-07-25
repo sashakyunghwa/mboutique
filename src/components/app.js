@@ -7,10 +7,10 @@ import Contact from './contact';
 
 const App = () => (
     <div>
-        <Route exact path='/' component={Home}/>
-        <Route path='/macarons' component={Macarons}/>
-        <Route path='/gifts_parties' component={Gifts}/>
-        <Route path='/contact' component={Contact}/>
+        <Route exact path='/mboutique/dist/' component={Home}/>
+        <Route path='/mboutique/dist/macarons' component={Macarons}/>
+        <Route path='/mboutique/dist/gifts_parties' component={Gifts}/>
+        <Route path='/mboutique/dist/contact' component={Contact}/>
     </div>
 );
 
