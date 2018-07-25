@@ -35,16 +35,16 @@ class Header extends React.Component {
                     <div className={"collapse navbar-collapse" + (this.state.menuOpen ? " show" : "")} id="navbarSupportedContent1">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item active">
-                                <Link className="nav-link" to="/">WELCOME</Link>
+                                <Link className="nav-link" to="/mboutique/dist/">WELCOME</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/macarons">OUR MACARONS</Link>
+                                <Link className="nav-link" to="/mboutique/dist/macarons">OUR MACARONS</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/gifts_parties">GIFTS &amp; PARTIES</Link>
+                                <Link className="nav-link" to="/mboutique/dist/gifts_parties">GIFTS &amp; PARTIES</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/contact">CONTACT</Link>
+                                <Link className="nav-link" to="/mboutique/dist/contact">CONTACT</Link>
                             </li>
                         </ul>
                     </div>
