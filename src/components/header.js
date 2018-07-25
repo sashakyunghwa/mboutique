@@ -23,10 +23,10 @@ class Header extends React.Component {
             <header>
                 <img id="logo-one" src={logo}/>
                 <nav className="regular-nav-bar">
-                    <Link to="/">WELCOME</Link>
-                    <Link to="/macarons">OUR MACARONS</Link>
-                    <Link to="/gifts_parties">GIFTS &amp; PARTIES</Link>
-                    <Link to="/contact">CONTACT</Link>
+                    <Link to="/mboutique/dist/">WELCOME</Link>
+                    <Link to="/mboutique/dist/macarons">OUR MACARONS</Link>
+                    <Link to="/mboutique/dist/gifts_parties">GIFTS &amp; PARTIES</Link>
+                    <Link to="/mboutique/dist/contact">CONTACT</Link>
                 </nav>
                 <nav className="hamburger-menu navbar navbar-light">
                     <a className="navbar-brand" href="#"><img id="logo" src={logo}/></a>
